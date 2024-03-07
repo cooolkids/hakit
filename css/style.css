@@ -1,4 +1,4 @@
-@import url(/reset.css);
+@import url(/css/reset.css);
 
 * {
     box-sizing: border-box;
@@ -20,8 +20,33 @@ article {
     display: flex;
 }
 
+.summary {
+    margin-top: 20px;
+}
+
+.item {
+    margin-top: 50px;
+    gap: 5px;
+    width: 60%;
+}
+
+.product1 .item li {
+    width: 60%;
+}
 
 
+.sticky {
+    background-attachment: fixed;
+}
+
+.art1,
+.art2 {
+    border: 5px solid #FB7575;
+    padding: 20px;
+    width: 45%;
+    height: 400px;
+    text-align: center;
+}
 
 .column {
     width: 50%;
@@ -33,8 +58,6 @@ article {
 }
 
 
-
-
 .attach-bg {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -42,132 +65,271 @@ article {
     height: 100%;
 }
 
+
+.desc-wrap {
+    text-align: center;
+    padding: 5px;
+}
+
+
+.desc-wrap h3 {
+    font-size: 38px;
+    font-weight: lighter;
+    line-height: 80px;
+}
+
+.desc-wrap p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.desc-wrap a {
+    border: 1px solid #000;
+    padding: 10px;
+    line-height: 80px;
+}
+
+
+.sumup {
+    line-height: 50px;
+}
+
+.sumup h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.sumup p {
+    font-size: 16px;
+}
+
+.sumup a {
+    padding: 10px;
+    border: 1px solid #000;
+    line-height: 70px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
 .bg1 {
-    background-image: url(/반응형2/images/sect1.jpg);
+    background-image: url(/images/sect1.jpg);
     background-position: right top;
     width: 50%;
 }
 
 .bg2 {
-    background-image: url(/반응형2/images/sect2.jpg);
+    background-image: url(/images/sect2.jpg);
     background-position: center;
     height: 100vh;
     width: 100%;
     position: relative;
 }
 
-.summary2 {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    position: absolute;
-}
-
-
 .bg3 {
-    background-image: url(/반응형2/images/sect4.jpg);
+    background-image: url(/images/sect4.jpg);
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
 
 .bg4 {
-    background-image: url(/반응형2/images/sect5.png);
-}
-
-.attach-bg2 {
-    background-image: url(/반응형2/images/sect2.jpg);
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size: cover;
-    width: 100%;
-    /* position: relative; */
-}
-
-.sect3-inner .box1 {
-    background-image: url(/반응형2/images/sect3-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* width: 50%;
-    height: 100%; */
-}
-
-.sect3-inner .box2 {
-    background: #FB7575;
-    color: #fff;
-    /* width: 18%;
-    height: 60%; */
-}
-
-.sect3-inner .box3 {
-    background-image: url(/반응형2/images/sect3-2.jpg);
-    /* width: 18%;
-    height: 40%; */
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.sect3-inner .box4 {
-    background-image: url(/반응형2/images/sect3-3.jpg);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.sect3-inner .box5 {
-    background-image: url(/반응형2/images/sect3-4.jpg);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.sect3-inner .box8 {
-    display: flex;
-    /* width: 32%;
-    height: 27%; */
-}
-
-.sect3-inner .box6 {
-    background-image: url(/반응형2/images/sect3-5.jpg);
-    /* width: 32%;
-    height: 50%; */
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.sect3-inner .box7 {
-    width: 32%;
-    height: 23%;
-    background: #FB7575;
-    color: #fff;
-}
-
-.sticky-bg {
-    background-image: url(/반응형2/images/sect4.jpg);
-    background-position: left top;
-    background-attachment: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 100vh;
-}
-
-#sect5 {
-    width: 100%;
-    height: 100%;
-}
-
-.sticky-bg2 {
-    background-image: url(/반응형2/images/sect5.png);
+    background-image: url(/images/sect5.png);
     background-position: right top;
-    background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 50%;
+    width: 100%;
     height: 100vh;
-    /* margin-top: 150px; */
 }
 
 
+.summary2 {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+}
+
+.summary2 h2 {
+    font-size: 60px;
+    line-height: 80px;
+}
+
+
+.summary2 .button {
+    border: 1px solid #fff;
+    padding: 10px;
+    line-height: 90px;
+}
+
+
+
+#sect3 {
+    width: 100%;
+    height: 100vh;
+}
+
+#sect3 h3 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+
+.sect3-wrap {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.sect3-inner {
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+
+.box1 {
+    background-image: url(/images/sect3-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.box2 {
+    background: #FB7575;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.box3 {
+    background-image: url(/images/sect3-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.box4 {
+    background-image: url(/images/sect3-3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.box5 {
+    background-image: url(/images/sect3-4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.box8 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.box6 {
+    background-image: url(/images/sect3-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.box7 {
+    background: #FB7575;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+#sect6 {
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+}
+
+#sect6 h3 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sect6 .insta img {
+    width: 8%;
+    border-radius: 99px;
+    border: 1px solid #868686;
+}
+
+.insta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.swiper-slide {
+    padding-top: 30px;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    color: #fff;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.footer-wrap ul {
+    display: flex;
+    gap: 20px;
+    line-height: 40px;
+}
+
+.footer-wrap p {
+    line-height: 30px;
+}
+
+/* #sect4 .art1>div,
+#sect5 .art2>div {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    border: 1px solid #f0f;
+} */
 
 @media screen and (max-width: 640px) {
     .flex {
@@ -186,7 +348,7 @@ article {
         justify-content: center;
     }
 
-    .attach-bg1 {
+    .bg1 {
         width: 100%;
         height: 60vh;
         background-size: contain;
@@ -195,22 +357,22 @@ article {
 
     #sect2 {
         width: 100%;
-        height: 724px;
-    }
-
-    .attach-bg2 {
-        width: 100%;
-        height: 80%;
-        margin-top: 500px;
-        background-image: none;
-        background: gray;
-        border: 5px solid #fff;
-        color: #fff;
+        height: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
     }
+
+    .bg2 {
+        width: 100%;
+        height: 350px;
+        margin-top: 400px;
+        background-image: none;
+        background: rgb(189, 189, 189);
+        border: 5px solid #fff;
+        color: #fff;
+    }
+
 
     .summary2 h2 {
         font-size: 40px;
@@ -238,31 +400,28 @@ article {
 
     .sect3-wrap {
         width: 100%;
-        height: 100%;
-
-    }
-
-    .sect3-inner {
-        width: 100%;
         height: 720px;
         display: flex;
         flex-wrap: wrap;
     }
 
+
+
     .box1 {
-        width: 40%;
+        width: 50%;
         height: 50%;
     }
 
     .box2 {
-        width: 30%;
-        height: 50%;
+        width: 50%;
+        height: 25%;
     }
 
     .box3 {
-        width: 30%;
-        height: 50%;
+        width: 50%;
+        height: 25%;
     }
+
 
     .box8 {
         width: 50%;
@@ -279,25 +438,34 @@ article {
         display: none;
     }
 
-    #sect4 {
-        width: 100%;
-        height: 70%;
-    }
-
     .sticky-bg {
         width: 100%;
         height: 720px;
     }
 
+    #sect4 {
+        width: 100%;
+        height: 100%;
+    }
     .art1 {
         width: 100%;
         height: 100%;
         background: #fff;
     }
 
+    .desc {
+        height: 30vh
+    }
+
+    .product1,
+    .product2 {
+        height: 100vh;
+    }
+
     .desc-wrap {
         text-align: center;
         padding: 50px;
+        height: 50vh;
     }
 
     .desc-wrap h3 {
@@ -317,10 +485,6 @@ article {
         line-height: 80px;
     }
 
-    .product1 {
-        width: 100%;
-        height: 100vh;
-    }
 
     .product1 figure img {
         width: 100%;
@@ -338,58 +502,23 @@ article {
         text-align: right;
     }
 
-    .sumup1 h3 {
+    .sumup h3 {
         font-size: 40px;
         line-height: 80px;
     }
 
-    .sumup1 p {
+    .sumup p {
         font-size: 25px;
     }
 
-    .sumup1 a {
+    .sumup a {
         border: 1px solid #000;
         line-height: 100px;
         padding: 10px;
     }
 
-    .summary3 li img {
+    .summary li img {
         width: 100%;
-    }
-
-    .summary3 li {
-        position: relative;
-        width: 40%;
-        top: 200px;
-        padding: 20px;
-    }
-
-    .product2 {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-    }
-
-    .product2 .sumup2 {
-        width: 100%;
-        height: 400px;
-        padding: 10px;
-        margin-top: 100px;
-    }
-
-    .sumup2 h3 {
-        font-size: 40px;
-        line-height: 80px;
-    }
-
-    .sumup2 p {
-        font-size: 25px;
-    }
-
-    .sumup2 a {
-        border: 1px solid #000;
-        line-height: 100px;
-        padding: 10px;
     }
 
 
@@ -397,11 +526,6 @@ article {
         width: 70%;
     }
 
-    .product2 figure {
-        width: 100%;
-        position: relative;
-        transform: translateX(180px);
-    }
 
     .product2 ul li img {
         width: 100%;
@@ -410,22 +534,13 @@ article {
     .product2 ul {
         display: flex;
         width: 50%;
-        position: absolute;
-        right: 10px;
-        bottom: -100px;
     }
 
     #sect5 {
         width: 100%;
         height: 100%;
-        position: relative;
-        margin-top: 300px;
     }
 
-    .sticky-bg2 {
-        width: 100%;
-        height: 720px;
-    }
 
     .art2 {
         width: 100%;
@@ -433,29 +548,6 @@ article {
         background: #fff;
     }
 
-    .desc-wrap2 {
-        height: 100%;
-        text-align: center;
-        padding: 50px;
-        background: #fff;
-    }
-
-    .desc-wrap2 h3 {
-        font-size: 50px;
-        font-weight: lighter;
-        line-height: 100px;
-    }
-
-    .desc-wrap2 p {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .desc-wrap2 a {
-        border: 1px solid #000;
-        padding: 10px;
-        line-height: 80px;
-    }
 
     .product3 {
         width: 100%;
@@ -469,79 +561,19 @@ article {
     .product3 figure {
         width: 70%;
         height: 100%;
-        position: relative;
-        left: 20px;
     }
 
     .product3 ul {
         display: flex;
     }
 
-    .product3 .sumup3 {
-        position: absolute;
-        right: 20px;
-        text-align: right;
-    }
 
-    .sumup3 h3 {
-        font-size: 40px;
-        line-height: 80px;
-    }
-
-    .sumup3 p {
-        font-size: 25px;
-    }
-
-    .sumup3 a {
-        border: 1px solid #000;
-        line-height: 100px;
-        padding: 10px;
-    }
-
-    .summary5 li img {
-        width: 100%;
-    }
-
-    .summary5 li {
-        position: relative;
-        width: 40%;
-        top: 200px;
-        padding: 20px;
-    }
-
-    .product4 {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-    }
-
-    .summary6 {
+    .summary {
         margin-top: 100px;
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .product4 .sumup4 {
-        width: 100%;
-        height: 400px;
-        padding: 10px;
-        margin-top: 100px;
-    }
-
-    .sumup4 h3 {
-        font-size: 40px;
-        line-height: 80px;
-    }
-
-    .sumup4 p {
-        font-size: 25px;
-    }
-
-    .sumup4 a {
-        border: 1px solid #000;
-        line-height: 100px;
-        padding: 10px;
-    }
 
 
     .product4 figure img {
@@ -554,17 +586,18 @@ article {
         transform: translateX(180px);
     }
 
-    .summary6 ul li img {
+    .summary ul li img {
         width: 100%;
     }
 
-    .summary6 ul {
+    .summary ul {
         display: flex;
         width: 50%;
         position: absolute;
         right: 10px;
-        bottom: -100px;
+        bottom: -300px;
     }
+
 
 
     #sect6 {
@@ -596,10 +629,13 @@ article {
         gap: 20px;
     }
 
+    .swiper-wrapper {
+        position: relative;
+    }
+
     .swiper-slide {
-        padding-top: 10px;
-        transform: translate(50%);
         position: absolute;
+        top: 5px;
     }
 
     footer {
@@ -620,9 +656,129 @@ article {
     .footer-wrap p {
         line-height: 30px;
     }
+
+
 }
 
 @media screen and (min-width:641px) {
-     
+
+    #sect4 img,
+    #sect5 img {
+        width: 100%;
+    }
+
+
+    #sect3 h3 {
+        text-align: center;
+        font-size: 50px;
+        line-height: 100px;
+    }
+
+
+    .sect3-wrap {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .sect3-inner {
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
+
+    }
+
+    #sect4 {
+        width: 100%;
+        height: 100%;
+        margin-top: 200px;
+        justify-content: center;
+
+    }
+
+
+    #sect5 {
+        width: 100%;
+        height: 100%;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+
+
+    .bg3 {
+        width: 45%;
+        height: 100vh;
+        background-size: 50%;
+
+    }
+
+    .bg4 {
+        width: 45%;
+        height: 100vh;
+        background-size: 50%;
+
+        background-position: right;
+    }
+
+
+
+
+
+    .box1 {
+        width: 50%;
+        height: 100%;
+    }
+
+    .box2 {
+        width: 20%;
+        height: 40%;
+    }
+
+    .box3 {
+        width: 20%;
+        height: 60%;
+    }
+
+    .box4 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box5 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box8 {
+        width: 30%;
+        height: 18%;
+    }
+
+    .box6 {
+        width: 30%;
+        height: 51%;
+    }
+
+    .box7 {
+        width: 30%;
+        height: 31%;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 0;
+    }
+
+    #sect4,
+    #sect5 {
+        width: 100%;
+        height: 100%;
+    }
+
 
 }
